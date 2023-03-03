@@ -5,7 +5,7 @@ import Home from "../views/Home.vue";
 import Blog from "../views/Blog.vue";
 import Projects from "../views/Projects.vue";
 import PageNotFound from "../views/PageNotFound.vue";
-// import ProjectOne from "../views/ProjectOne.vue";
+import ProjectOne from "../views/ProjectOne.vue";
 // import ProjectTwo from "../views/ProjectTwo.vue";
 // import p3 from "../views/p3.vue";
 // import p4 from "../views/p4.vue";
@@ -51,11 +51,11 @@ const router = createRouter({
 			component: PageNotFound,
 		},
 		// Child
-		// {
-		// 	path: "/projects/p1",
-		// 	name: "projectOne",
-		// 	component: ProjectOne,
-		// },
+		{
+			path: "/projects/projectOne",
+			name: "projectOne",
+			component: ProjectOne,
+		},
 		// {
 		// 	path: "/projects/p2",
 		// 	name: "projectTwo",
