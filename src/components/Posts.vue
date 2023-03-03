@@ -1,19 +1,20 @@
-<script setup>
+<script>
 
 </script>
 
 <template>
-    <div class="borderSize" style="min-height:100vh;">
+    <div class="borderSize" style="width:100%; min-height:100vh;">
         <!-- <video autoplay muted loop id="myVideo" class="img-fluid" style="position:fixed; min-width:100vw; height:auto;">
-                                                <source src="../assets/img/11.mp4" type="video/mp4">
-                                                Your browser does not support HTML5 video.
-                                            </video> -->
+                                                                                                                                                                                                                                                                                                                        <source src="../assets/img/11.mp4" type="video/mp4">
+                                                                                                                                                                                                                                                                                                                        Your browser does not support HTML5 video.
+                                                                                                                                                                                                                                                                                                                    </video> -->
         <!-- Back button -->
-        <div class="back-btn text-light" style="cursor:pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <div class="back-btn text-light" style="cursor:pointer;" @click="$router.go(-1)"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg> Back
+            </svg>Back
         </div>
         <div class="container d-flex justify-content-between py-5 px-5">
             <div class="container d-flex justify-content-between">
@@ -98,18 +99,18 @@
                             <router-link class="router text-decoration-none text-dark" to="/contact">Contact</router-link>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
-        <!-- Arrow to up -->
-        <!-- <div class="position-fixed">
-                    <a class="arrow position-fixed text-dark" style="cursor:pointer;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div> -->
+            <!-- Arrow to up -->
+            <div class="">
+                <a class="arrow position-fixed text-dark" style="cursor:pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                        class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -208,7 +209,7 @@ li {
 
 .back-btn {
     left: 50%;
-    position: fixed;
+    position: absolute;
     color: red;
     top: 0%;
     /* background-color: #28282B; */

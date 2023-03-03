@@ -23,7 +23,7 @@ const items = ref([
         id: 3,
         title: 'Project',
         text: 'text',
-        img: '../assets/bs.png'
+        img: '../assets/bs.png',
     },
     {
         id: 4,
@@ -42,10 +42,10 @@ const items = ref([
 
 <template>
     <div class="px-4">
-        <!-- Title -->
-        <div class="text-center pb-3">
-            <h1 class="display-4">Projects</h1>
-        </div>
+    <!-- Title -->
+    <div class="text-center pb-3">
+        <h1 class="display-4" @click="counter">Projects</h1>
+    </div>
         <!-- Info -->
         <div class="pb-5 px-4">
             <p class="fs-5"><span class="display-4">L</span>orem ipsum dolor sit amet consectetur
@@ -72,9 +72,22 @@ const items = ref([
                         <h3 class="card-title text-light">{{ item.title + ' ' + item.id }}</h3>
                         <p class="card-text text-light">{{ item.text }}</p>
                     </div>
-
                 </div>
             </div>
+            <!-- <div class="col col-lg-4 col-sm-12 col-md-6 pb-4">
+                                                                                        <div>
+                                                                                            <router-link to="/projects/AlwaysBeHappy">
+                                                                                                <div class="card bg-dark" style="cursor:pointer;">
+                                                                                                    <div class="card-body text-center">
+                                                                                                        <img src="../assets/img/vue.png" alt="">
+                                                                                                        <h3 class="card-title text-light">{{ items[0].title + ' ' + items[0].id }}</h3>
+                                                                                                        <p class="card-text text-light">{{ items[0].text }}</p>
+                                                                                                        <router-link to='{{ items[0].link }}'>Learn More!</router-link>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </router-link>
+                                                                                        </div>
+                                                                                    </div> -->
         </div>
     </div>
 </template>
