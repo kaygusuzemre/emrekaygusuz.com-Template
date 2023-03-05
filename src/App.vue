@@ -4,7 +4,7 @@ import PostsBar from '../src/components/PostsBar.vue'
 </script>
 
 <template>
-  <div>
+  <div class="" style="">
     <Posts class="posts-item"></Posts>
     <PostsBar class="posts-bar"></PostsBar>
   </div>

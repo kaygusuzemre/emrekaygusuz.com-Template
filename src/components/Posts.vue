@@ -1,13 +1,34 @@
 <script>
-
+export default {
+    data() {
+        return {
+            isVisible: true,
+        }
+    },
+    methods: {
+        visible() {
+            if (this.window.scrollY) {
+                this.isVisible = false;
+            }
+            else {
+                this.isVisible = true;
+            }
+        },
+        toTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+        },
+    },
+}
 </script>
 
 <template>
     <div class="borderSize" style="width:100%; min-height:100vh;">
-        <!-- <video autoplay muted loop id="myVideo" class="img-fluid" style="position:fixed; min-width:100vw; height:auto;">
-                                                                                                                                                                                                                                                                                                                        <source src="../assets/img/11.mp4" type="video/mp4">
-                                                                                                                                                                                                                                                                                                                        Your browser does not support HTML5 video.
-                                                                                                                                                                                                                                                                                                                    </video> -->
+        <!-- Video -->
+        <!-- <video autoplay muted loop id="myVideo" class="img-fluid" style="position:fixed; min-width:100vw; height:auto;"><source src="../assets/img/11.mp4" type="video/mp4">Your browser does not support HTML5 video.</video> -->
         <!-- Back button -->
         <div class="back-btn text-light" style="cursor:pointer;" @click="$router.go(-1)"><svg
                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
@@ -16,11 +37,11 @@
                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
             </svg>Back
         </div>
-        <div class="container d-flex justify-content-between py-5 px-5">
+        <div class="d-flex justify-content-between py-5 px-5" id="navbar-example2">
             <div class="container d-flex justify-content-between">
                 <!-- Social Media Icons -->
                 <div class="icons col-2">
-                    <ul class="icons-list position-fixed">
+                    <ul class="icons-list">
                         <li class="pb-2">
                             <a href="https://twitter.com/KaygusuzEmreyy" class="text-dark">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -81,7 +102,7 @@
 
                 <!-- Navigation Bar -->
                 <div class="menu col-2">
-                    <ul class="menu-list navBar position-fixed ps-5">
+                    <ul class="menu-list navBar ps-5">
                         <li class="fs-5 pe-2 pb-2">
                             <router-link class="router text-decoration-none text-dark" to="/">Home</router-link>
                         </li>
@@ -102,8 +123,8 @@
                 </div>
             </div>
             <!-- Arrow to up -->
-            <div class="">
-                <a class="arrow position-fixed text-dark" style="cursor:pointer;">
+            <div class="" v-if="visible">
+                <a class="arrow text-dark position-fixed" @click="toTop" style="cursor:pointer;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
                         class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"

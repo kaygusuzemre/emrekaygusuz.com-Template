@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <template>
     <div class="px-4">
         <p class="date"><span class="text-danger pe-3">VUE</span> August ,3</p>
