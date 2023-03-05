@@ -14,43 +14,48 @@ const items = ref([
         title: 'EVK Furniture',
         text: 'Furniture website design',
         img: 'vue.png',
-        color: 'color:black;'
+        color: 'color:white;'
     },
     {
         id: 1,
         title: 'War of the Legends',
-        text: 'text',
+        text: 'Card game with various characters',
         img: 'html.png',
+        color: 'color:white;'
     },
     {
         id: 2,
         title: 'Project',
         text: 'text',
         img: 'css.png',
+        color: 'color:white;'
     },
     {
         id: 3,
         title: 'Project',
         text: 'text',
         img: 'react.png',
+        color: 'color:white;'
     },
     {
         id: 4,
         title: 'Project',
         text: 'text',
         img: 'bs.png',
+        color: 'color:white;'
     },
     {
         id: 5,
         title: 'Project',
         text: 'text',
         img: 'nodejs.png',
+        color: 'color:white;'
     },
 ]);
 </script>
 
 <template>
-    <div class="px-4">
+    <div class="mx-4">
         <!-- Title -->
         <div class="text-center pb-3">
             <h1 class="display-4" @click="counter">Projects</h1>
@@ -74,17 +79,16 @@ const items = ref([
         </div>
         <!-- Project cards -->
         <div class="row">
-            <div v-for="item in items" class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4" :key="item.id" style="">
-                <div class="card bg-dark" style="cursor:pointer;">
+            <div v-for="item in items" class="p-0 col-12 col-lg-6 col-md-12 col-sm-12 mb-4" :key="item.id" style="">
+                <div class="card bg-dark mx-4" style="cursor:pointer;">
                     <router-link to="/projects/projectOne">
                         <div class="p-4 card-body text-center">
                             <!-- <img src="../assets/img/vue.png" alt="" width="100" height="100"> -->
-                            <img :src="'/src/assets/img/' + item.img" class="text-center"
-                                style="max-height:10vh; width:auto;">
-                            <div class="p-3 mt-3 rounded-3 text-light" style="">
+                            <img :src="'/src/assets/img/' + item.img" class="text-center img-fluid" alt="img-fluid"
+                                style="height:13vh; width:auto;">
+                            <div class="mt-3 rounded-3 text-light" style="">
                                 <h1 class="card-title fs-4" :style="item.color">{{ item.title }}</h1>
-                                <h4 class="card-text text-light">{{ item.id }}</h4>
-                                <p class="card-text text-light">{{ item.text }}</p>
+                                <p class="card-text text-secondary fs-6">{{ item.text }}</p>
                             </div>
                         </div>
                     </router-link>

@@ -41,7 +41,7 @@ export default {
             <div class="container d-flex justify-content-between">
                 <!-- Social Media Icons -->
                 <div class="icons col-2">
-                    <ul class="icons-list">
+                    <ul class="icons-list position-fixed">
                         <li class="pb-2">
                             <a href="https://twitter.com/KaygusuzEmreyy" class="text-dark">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -102,7 +102,7 @@ export default {
 
                 <!-- Navigation Bar -->
                 <div class="menu col-2">
-                    <ul class="menu-list navBar ps-5">
+                    <ul class="menu-list navBar ps-5 position-fixed">
                         <li class="fs-5 pe-2 pb-2">
                             <router-link class="router text-decoration-none text-dark" to="/">Home</router-link>
                         </li>
