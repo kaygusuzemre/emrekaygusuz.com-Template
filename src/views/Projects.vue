@@ -6,7 +6,7 @@ const items = ref([
         id: 0,
         name: 'EVK',
         title: 'EVK Furniture',
-        text: 'Furniture website design',
+        text: 'furniture website design',
         projectLanguage: 'Vue3 + Vite Project',
         projectLanguageColor: 'color:#42b883',
         img: 'vue.png',
@@ -16,7 +16,7 @@ const items = ref([
         id: 1,
         name: 'WotL',
         title: 'War of the Legends',
-        text: 'Card game with various characters',
+        text: 'card game with various characters',
         projectLanguage: 'HTML5 Project',
         projectLanguageColor: 'color:#FF5733',
         img: 'html.png',
@@ -99,7 +99,7 @@ const items = ref([
                                 style="height:13vh; width:auto;">
                             <div class="mt-3 rounded-3 text-light" style="">
                                 <h1 class="card-title fs-4" :style="item.color">{{ item.title }}</h1>
-                                <p class="card-text text-secondary fs-6">{{ item.text }}</p>
+                                <p class="card-text text-secondary text-capitalize fs-6">{{ item.text }}</p>
                                 <p class="card-info" :style="item.projectLanguageColor">{{ item.projectLanguage }}</p>
                             </div>
                         </div>
