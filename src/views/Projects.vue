@@ -7,14 +7,18 @@ const items = ref([
         name: 'EVK',
         title: 'EVK Furniture',
         text: 'Furniture website design',
+        projectLanguage: 'Vue3 + Vite Project',
+        projectLanguageColor: 'color:#42b883',
         img: 'vue.png',
-        color: 'color:white;'
+        color: 'color:white'
     },
     {
         id: 1,
         name: 'WotL',
         title: 'War of the Legends',
         text: 'Card game with various characters',
+        projectLanguage: 'HTML5 Project',
+        projectLanguageColor: 'color:#FF5733',
         img: 'html.png',
         color: 'color:white;'
     },
@@ -23,6 +27,8 @@ const items = ref([
         name: '',
         title: 'Project',
         text: 'text',
+        projectLanguage: 'CSS Project',
+        projectLanguageColor: 'color:#2965f1',
         img: 'css.png',
         color: 'color:white;'
     },
@@ -31,6 +37,8 @@ const items = ref([
         name: '',
         title: 'Project',
         text: 'text',
+        projectLanguage: 'React Project',
+        projectLanguageColor: 'color:#61dbfb',
         img: 'react.png',
         color: 'color:white;'
     },
@@ -39,6 +47,8 @@ const items = ref([
         name: '',
         title: 'Project',
         text: 'text',
+        projectLanguage: 'Bootstrap 5 Snippets',
+        projectLanguageColor: 'color:#563d7c',
         img: 'bs.png',
         color: 'color:white;'
     },
@@ -47,6 +57,8 @@ const items = ref([
         name: '',
         title: 'Project',
         text: 'text',
+        projectLanguage: 'Diving into Node.js',
+        projectLanguageColor: 'color:#6cc24a',
         img: 'nodejs.png',
         color: 'color:white;'
     },
@@ -88,6 +100,7 @@ const items = ref([
                             <div class="mt-3 rounded-3 text-light" style="">
                                 <h1 class="card-title fs-4" :style="item.color">{{ item.title }}</h1>
                                 <p class="card-text text-secondary fs-6">{{ item.text }}</p>
+                                <p class="card-info" :style="item.projectLanguageColor">{{ item.projectLanguage }}</p>
                             </div>
                         </div>
                     </router-link>
