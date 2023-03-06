@@ -63,22 +63,22 @@ const router = createRouter({
 			component: Project2,
 		},
 		{
-			path: "/projects/project1",
+			path: "/projects/project3",
 			name: "project3",
 			component: Project3,
 		},
 		{
-			path: "/projects/project2",
+			path: "/projects/project4",
 			name: "project4",
 			component: Project4,
 		},
 		{
-			path: "/projects/project3",
+			path: "/projects/project5",
 			name: "project5",
 			component: Project5,
 		},
 		{
-			path: "/projects/project4",
+			path: "/projects/project6",
 			name: "project6",
 			component: Project6,
 		},
