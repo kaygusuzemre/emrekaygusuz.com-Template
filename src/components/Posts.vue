@@ -35,7 +35,7 @@ import { ref } from 'vue'
             </svg>Back
         </div>
         <div class="d-flex justify-content-between py-5 px-5" id="navbar-example2">
-            <div class="container d-flex justify-content-between">
+            <div class="d-flex justify-content-between">
                 <!-- Social Media Icons -->
                 <div class="icons col-2">
                     <Icons></Icons>
@@ -81,6 +81,14 @@ h4,
 p,
 span {
     color: black;
+}
+
+h1 {
+    text-shadow: 1px 1px 4px black;
+}
+
+h2 {
+    text-shadow: 1px 1px 2px black;
 }
 
 .router.router-link-active,

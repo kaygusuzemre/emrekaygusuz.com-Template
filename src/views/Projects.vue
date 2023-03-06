@@ -16,7 +16,7 @@ const items = ref([
         id: 1,
         name: 'WotL',
         title: 'War of the Legends',
-        text: 'card game with various characters',
+        text: 'card game with characters',
         projectLanguage: 'HTML5 Project',
         projectLanguageColor: 'color:#FF5733',
         img: 'html.png',
@@ -94,7 +94,6 @@ const items = ref([
                 <div class="card bg-dark mx-4" style="cursor:pointer;">
                     <router-link :to="'/projects/' + item.name">
                         <div class="p-4 card-body text-center">
-                            <!-- <img src="../assets/img/vue.png" alt="" width="100" height="100"> -->
                             <img :src="'/src/assets/img/' + item.img" class="text-center img-fluid" alt="img-fluid"
                                 style="height:13vh; width:auto;">
                             <div class="mt-3 rounded-3 text-light" style="">
