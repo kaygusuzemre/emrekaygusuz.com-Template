@@ -12,13 +12,13 @@
                             <router-link class="router text-decoration-none" to="/">Home</router-link>
                         </li>
                         <li class="fs-5 pe-3">
-                            <router-link class="router text-decoration-none" to="/about">About</router-link>
+                            <router-link class="router text-decoration-none" to="/projects">Projects</router-link>
                         </li>
                         <li class="fs-5 pe-3">
                             <router-link class="router text-decoration-none" to="/blog">Blog</router-link>
                         </li>
                         <li class="fs-5 pe-3">
-                            <router-link class="router text-decoration-none" to="/projects">Projects</router-link>
+                            <router-link class="router text-decoration-none" to="/about">About</router-link>
                         </li>
                         <li class="fs-5 pe-3">
                             <router-link class="router text-decoration-none" to="/contact">Contact</router-link>

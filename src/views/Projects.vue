@@ -1,16 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 
-// const images = ref([
-//     {
-//         id: 0,
-//         url: '../'
-//     }
-// ])
-
 const items = ref([
     {
         id: 0,
+        name: 'EVK',
         title: 'EVK Furniture',
         text: 'Furniture website design',
         img: 'vue.png',
@@ -18,6 +12,7 @@ const items = ref([
     },
     {
         id: 1,
+        name: 'WotL',
         title: 'War of the Legends',
         text: 'Card game with various characters',
         img: 'html.png',
@@ -25,6 +20,7 @@ const items = ref([
     },
     {
         id: 2,
+        name: '',
         title: 'Project',
         text: 'text',
         img: 'css.png',
@@ -32,6 +28,7 @@ const items = ref([
     },
     {
         id: 3,
+        name: '',
         title: 'Project',
         text: 'text',
         img: 'react.png',
@@ -39,6 +36,7 @@ const items = ref([
     },
     {
         id: 4,
+        name: '',
         title: 'Project',
         text: 'text',
         img: 'bs.png',
@@ -46,6 +44,7 @@ const items = ref([
     },
     {
         id: 5,
+        name: '',
         title: 'Project',
         text: 'text',
         img: 'nodejs.png',
@@ -81,7 +80,7 @@ const items = ref([
         <div class="row">
             <div v-for="item in items" class="p-0 col-12 col-lg-6 col-md-12 col-sm-12 mb-4" :key="item.id" style="">
                 <div class="card bg-dark mx-4" style="cursor:pointer;">
-                    <router-link to="/projects/projectOne">
+                    <router-link :to="'/projects/' + item.name">
                         <div class="p-4 card-body text-center">
                             <!-- <img src="../assets/img/vue.png" alt="" width="100" height="100"> -->
                             <img :src="'/src/assets/img/' + item.img" class="text-center img-fluid" alt="img-fluid"

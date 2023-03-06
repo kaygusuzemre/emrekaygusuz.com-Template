@@ -1,6 +1,8 @@
 <script setup>
 import Posts from '../src/components/Posts.vue'
 import PostsBar from '../src/components/PostsBar.vue'
+import Icons from '../src/components/Icons.vue'
+import Menu from '../src/components/Menu.vue'
 </script>
 
 <template>
