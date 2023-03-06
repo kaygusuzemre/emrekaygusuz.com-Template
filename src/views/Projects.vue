@@ -24,7 +24,7 @@ const items = ref([
     },
     {
         id: 2,
-        name: '',
+        name: 'project3',
         title: 'Project',
         text: 'text',
         projectLanguage: 'CSS Project',
@@ -34,7 +34,7 @@ const items = ref([
     },
     {
         id: 3,
-        name: '',
+        name: 'project4',
         title: 'Project',
         text: 'text',
         projectLanguage: 'React Project',
@@ -44,7 +44,7 @@ const items = ref([
     },
     {
         id: 4,
-        name: '',
+        name: 'project5',
         title: 'Project',
         text: 'text',
         projectLanguage: 'Bootstrap 5 Snippets',
@@ -54,7 +54,7 @@ const items = ref([
     },
     {
         id: 5,
-        name: '',
+        name: 'project6',
         title: 'Project',
         text: 'text',
         projectLanguage: 'Diving into Node.js',
@@ -92,7 +92,7 @@ const items = ref([
         <div class="row">
             <div v-for="item in items" class="p-0 col-12 col-lg-6 col-md-12 col-sm-12 mb-4" :key="item.id" style="">
                 <div class="card bg-dark mx-4" style="cursor:pointer;">
-                    <router-link :to="'/projects/' + item.name">
+                    <router-link :to="'projects/' + item.name">
                         <div class="p-4 card-body text-center">
                             <img :src="'/src/assets/img/' + item.img" class="text-center img-fluid" alt="img-fluid"
                                 style="height:13vh; width:auto;">

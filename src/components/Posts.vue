@@ -35,7 +35,7 @@ import { ref } from 'vue'
             </svg>Back
         </div>
         <div class="d-flex justify-content-between py-5 px-5" id="navbar-example2">
-            <div class="d-flex justify-content-between">
+            <div class="container d-flex justify-content-between">
                 <!-- Social Media Icons -->
                 <div class="icons col-2">
                     <Icons></Icons>
