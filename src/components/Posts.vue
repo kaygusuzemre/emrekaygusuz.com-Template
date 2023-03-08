@@ -4,8 +4,6 @@ import Menu from './Menu.vue'
 
 import { ref } from 'vue'
 
-const visibility = ref(false);
-
 function toTop() {
     window.scrollTo({
         top: 0,
@@ -13,24 +11,6 @@ function toTop() {
         behavior: 'smooth'
     })
 }
-
-function isVisible() {
-    if (scrollDown == 0) {
-        visibility = false;
-    }
-    else {
-        visibility = false;
-    }
-}
-
-const scrollDown = ref(addEventListener("scroll", (event) => {
-}))
-
-console.log(scrollDown);
-
-// addEventListener("scroll", (event) => {
-//     console.log(scrollY);
-// });
 
 </script>
 
@@ -66,7 +46,7 @@ console.log(scrollDown);
             </div>
         </div>
         <!-- Arrow to up -->
-        <div class="" v-if="visibility">
+        <div class="" @scroll="handleScroll">
             <a class="arrow text-dark position-fixed" @click="toTop" style="cursor:pointer;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
                     class="bi bi-arrow-up-circle" viewBox="0 0 16 16">

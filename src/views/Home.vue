@@ -34,7 +34,7 @@
 }
 
 h1 {
-    text-shadow: 2px 2px 6px black;
+    text-shadow: 1px 1px 6px black;
 }
 
 img {
