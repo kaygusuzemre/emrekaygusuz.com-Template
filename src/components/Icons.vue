@@ -43,9 +43,9 @@ const icons = ref([
 
 <template>
     <div class="position-fixed">
-        <ul class="icons-list" v-for="icon in icons" :key="icon.id">
-            <li class="">
-                <a :href="icon.link" class="text-dark">
+        <ul class="icons" v-for="icon in icons" :key="icon.id">
+            <li class="icons-list">
+                <a :href="icon.link" class="ic text-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" :class="icon.brand"
                         viewBox="0 0 16 16">
                         <path :d="icon.path" />
@@ -55,3 +55,9 @@ const icons = ref([
         </ul>
     </div>
 </template>
+
+<style>
+.btn-home:hover .icons {
+    transform: scale(1.5);
+}
+</style>

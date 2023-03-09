@@ -10,13 +10,21 @@
             </div>
         </div>
 
-        <div class="about p-5 mt-3">
-            <h2 class="text-uppercase pb-3 display-6">Do you wanna learn more about me?</h2>
-            <p class="text-secondary fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius iure
-                magnirepellendus! Repellat asperiores cumque et, veniam atque libero, deserunt ad mollitia corporis,
-                consequuntur facilis. Ad sequi delectus minima quis optio cum, quas distinctio architecto tempore rerum
-                enim quo veritatis id fuga eveniet vel, amet molestiae est saepe. Aut.
+        <div class="about text-center p-5 mt-3">
+            <h2 class="text-uppercase text-start pb-3 display-6">Do you wanna learn more about me?</h2>
+            <p class="text-secondary text-start fs-5">Hi, I'm Emre, and welcome to my personal website! I am a passionate
+                frontend developer with a keen eye for detail and a strong desire to create beautiful, user-friendly
+                interfaces. With 3 years of experience in the industry, I have honed my skills in HTML, CSS, JavaScript,
+                and other cutting-edge technologies to create dynamic and engaging websites that stand out from the crowd.
+                My approach to web development is centered around the user experience, and I take great pride in my ability
+                to create intuitive and seamless interfaces that are both functional and visually appealing. I believe that
+                good design is the foundation of a great website, and I am committed to staying up-to-date with the latest
+                trends and best practices in the industry. Thank you for visiting my website, and I look forward to the
+                opportunity to work with you!
             </p>
+
+            <router-link to="/About"><button class="btn-home btn btn-dark">Click For More Details!</button></router-link>
+
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>EVK Team</h1>
+        <h1 class="text-dark pb-3">EVK Team</h1>
         <p class="text-secondary">You will see the website template soon...</p>
         <p>Click
             <a class="text-decoration-none text-danger"

@@ -1,66 +1,65 @@
 <script setup>
 import { ref } from 'vue'
-
 const reactivity = ref([
     {
-        items: 'reactive: Gets the object and makes the object deeply observable.'
+        items: 'reactive:', info: 'Gets the object and makes the object deeply observable.'
     },
     {
-        items: 'readonly: freezes the received reactive, non- reactive or ref element as immutable.'
+        items: 'readonly:', info: 'freezes the received reactive, non- reactive or ref element as immutable.'
     },
     {
-        items: 'isProxy: checks whether it is reactive or readonly.'
+        items: 'isProxy:', info: 'checks whether it is reactive or readonly.'
     },
     {
-        items: 'isReactive: reactive control.'
+        items: 'isReactive:', info: 'reactive control.'
     },
     {
-        items: 'isReadonly: readonly control.'
+        items: 'isReadonly:', info: 'readonly control.'
     },
     {
-        items: 'toRaw: makes the value it receives non - reactive.'
+        items: 'toRaw:', info: 'makes the value it receives non - reactive.'
     },
     {
-        items: 'markRaw: It prevents the value it receives from turning into reactive.'
+        items: 'markRaw:', info: 'It prevents the value it receives from turning into reactive.'
     },
     {
-        items: 'shallowReactive: Does not make nested elements reactive.'
+        items: 'shallowReactive:', info: 'Does not make nested elements reactive.'
     },
     {
-        items: 'shallowReadonly: Does not make nested elements readonly.'
+        items: 'shallowReadonly:', info: 'Does not make nested elements readonly.'
     },
     {
-        items: 'ref: It can take atomic value(int), like if it gets an object, it makes it automatically reactive.Its value is reached with .value.'
+        items: 'ref:', info: 'It can take atomic value(int), like if it gets an object, it makes it automatically reactive.Its value is reached with .value.'
     },
     {
-        items: 'unref: removes the ref.'
+        items: 'unref:', info: 'removes the ref.'
     },
     {
-        items: 'toRef: It is used to reference an element of the Reactive object.'
+        items: 'toRef:', info: 'It is used to reference an element of the Reactive object.'
     },
     {
-        items: 'toRefs: The entire reactive object can be referenced, toRefs elements do not lose their reactivity when destructed.'
+        items: 'toRefs:', info: 'The entire reactive object can be referenced, toRefs elements do not lose their reactivity when destructed.'
     },
     {
-        items: 'isRef: Reference check.'
+        items: 'isRef:', info: 'Reference check.'
     },
     {
-        items: 'shallowRef: Does not reference nested values.'
+        items: 'shallowRef:', info: 'Does not reference nested values.'
     },
     {
-        items: 'triggerRef: It is used to trigger the watchers watching shallowRef.'
+        items: 'triggerRef:', info: 'It is used to trigger the watchers watching shallowRef.'
     },
     {
-        items: 'customRef: It can be used to prepare a custom get set, there is a debounce example in the Vue3 document.'
+        items: 'customRef:', info: 'It can be used to prepare a custom get set, there is a debounce example in the Vue3 document.'
     },
     {
-        items: 'computed: It is used to process Reactive elements like reduce etc.Return value can be observed.'
+        items: 'computed:', info: 'It is used to process Reactive elements like reduce etc.Return value can be observed.'
     },
     {
-        items: 'watch: It watches the specified element or elements and calls the callback function at the time of change. (It was working singly in Vue2, but in Vue3, it can watch multiple elements.)'
+        items: 'watch:', info: 'It watches the specified element or elements and calls the callback function at the time of change. (It was working singly in Vue2, but in Vue3, it can watch multiple elements.)'
     },
     {
-        items: 'watchEffect: Observes the reactive variables in the function without specifying the element specifically.'
+        items: 'watchEffect:', info: ' Observes the reactive variables in the function without specifying the element specifically.'
     },
 ]);
 </script>
@@ -130,9 +129,10 @@ const reactivity = ref([
                 wanted to do this in the component, we were using <span class="info px-1">Vue.observable</span>. But in
                 terms of reactivity, that was all we had. In Vue 3, reactivity events have been made more detailed. </p>
             <h2 class="article3 border-bottom border-dark border-1 pb-2">Reactivity variables in Vue 3</h2>
-            <ul class="article2">
-                <li class="pb-1" v-for="reac in reactivity">
-                    {{ reac.items }}
+            <ul class="article2 pt-2">
+                <li class="" v-for="reac in reactivity" :key="reac">
+                    <p class="fw-bold pe-1">{{ reac.items }}</p>
+                    <p>{{ reac.info }}</p>
                 </li>
             </ul>
             <p class="article3 text-secondary">Note: There is more information about these on the Vue3 docs page. You can
