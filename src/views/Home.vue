@@ -24,7 +24,8 @@
                 opportunity to work with you!
             </p>
 
-            <router-link to="/About"><button class="btn-home btn btn-dark">Click for more details!</button></router-link>
+            <router-link to="/About"><button class="btn-home btn btn-dark mb-4">Click for more
+                    details!</button></router-link>
 
         </div>
     </div>

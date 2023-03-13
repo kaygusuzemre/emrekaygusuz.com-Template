@@ -22,6 +22,8 @@
             to
             help in any way I can.
         </p>
+
+        <!-- Form -->
         <div class="row row-cols-2 d-flex justify-content-between bg-dark rounded-3 p-5 align-items-center">
             <div class="contact-img">
                 <img src="../assets/img/1.png" alt="img-fluid" class="img-fluid">
@@ -37,6 +39,7 @@
                 </div>
             </div>
         </div>
+
         <p class="fs-5 pt-5"> Thank you for visiting my website, and I look forward to the opportunity to work with
             you!</p>
     </div>

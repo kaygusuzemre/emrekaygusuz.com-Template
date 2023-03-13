@@ -26,23 +26,18 @@ function toTop() {
         </div>
 
         <!-- Page View -->
-        <div class="d-flex justify-content-between py-5 px-5" id="navbar-example2">
-            <div class="d-flex justify-content-between">
+        <div class="py-5 px-5 d-flex justify-content-between">
+            <!-- Social Media Icons -->
+            <div class="icons col-2 d-flex flex-column align-items-start">
+                <Icons></Icons>
+            </div>
 
-                <!-- Social Media Icons -->
-                <div class="icons col-2 d-flex flex-column align-items-start">
-                    <Icons></Icons>
-                </div>
-
-                <!--Main Page-->
-                <div class="col-8">
-                    <router-view class="view"></router-view>
-                </div>
+            <!--Main Page-->
+        <router-view class="col-8 view"></router-view>
 
             <!-- Navigation Bar -->
-                <div class="menu col-2 d-flex flex-column align-items-end">
-                    <Menu></Menu>
-                </div>
+            <div class="menu col-2 d-flex flex-column align-items-end">
+                <Menu></Menu>
             </div>
         </div>
         <!-- Arrow to up -->
@@ -54,8 +49,8 @@ function toTop() {
             </svg>
         </div>
         <!-- <div class="search position-fixed">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-            </div> -->
+                                                                        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                                                                    </div> -->
     </div>
 </template>
 
@@ -74,6 +69,12 @@ h4,
 p,
 span {
     color: black;
+}
+
+@media screen and (max-width: 992px) {
+    .arrow {
+        display: none;
+    }
 }
 
 h1 {

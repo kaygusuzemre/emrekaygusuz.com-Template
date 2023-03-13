@@ -8,40 +8,40 @@ const stopMe = ref(true);
         <h1 class="pb-3 text-center mb-4">About Me</h1>
         <div class="d-flex justify-content-between mb-5">
             <div class="col-6" v-if="stopMe">
-                <div class="d-flex flex-column align-items-center justify-content-between">
+                <div class="a-icons d-flex flex-column align-items-center justify-content-between">
                     <img class="animated img-fluid" src="../assets/img/vue.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid mb-4" src="../assets/img/vite.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid" src="../assets/img/react.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid" src="../assets/img/nodejs.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid mb-5" src="../assets/img/html.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid mb-5" src="../assets/img/css.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <img class="animated img-fluid mb-5" src="../assets/img/bs.png" alt="img-fluid"
-                        style="height:20vh; width:auto;">
+                        style="max-height:20vh; max-width:auto;">
                     <button class="btn btn-danger" @click="stopMe = !stopMe">Stop</button>
                 </div>
             </div>
             <div class="not-animated col-6" v-else>
-                <div class="d-flex flex-column align-items-center justify-content-between">
-                    <img class="img-fluid" src="../assets/img/vue.png" alt="img-fluid" style="height:20vh; width:auto;"
-                        :style="stopMe">
+                <div class="na-icons d-flex flex-column align-items-center justify-content-between">
+                    <img class="img-fluid" src="../assets/img/vue.png" alt="img-fluid"
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
                     <img class="img-fluid mb-4" src="../assets/img/vite.png" alt="img-fluid"
-                        style="height:20vh; width:auto;" :style="stop">
-                    <img class="img-fluid" src="../assets/img/react.png" alt="img-fluid" style="height:20vh; width:auto;"
-                        :style="stopMe">
-                    <img class="img-fluid" src="../assets/img/nodejs.png" alt="img-fluid" style="height:20vh; width:auto;"
-                        :style="stopMe">
+                        style="max-height:20vh; max-width:auto;" :style="stop">
+                    <img class="img-fluid" src="../assets/img/react.png" alt="img-fluid"
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
+                    <img class="img-fluid" src="../assets/img/nodejs.png" alt="img-fluid"
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
                     <img class="img-fluid mb-5" src="../assets/img/html.png" alt="img-fluid"
-                        style="height:20vh; width:auto;" :style="stopMe">
-                    <img class="img-fluid mb-5" src="../assets/img/css.png" alt="img-fluid" style="height:20vh; width:auto;"
-                        :style="stopMe">
-                    <img class="img-fluid mb-5" src="../assets/img/bs.png" alt="img-fluid" style="height:20vh; width:auto;"
-                        :style="stopMe">
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
+                    <img class="img-fluid mb-5" src="../assets/img/css.png" alt="img-fluid"
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
+                    <img class="img-fluid mb-5" src="../assets/img/bs.png" alt="img-fluid"
+                        style="max-height:20vh; max-width:auto;" :style="stopMe">
                     <button class="btn btn-danger" @click="stopMe = !stopMe">Start</button>
                 </div>
             </div>
