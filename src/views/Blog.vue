@@ -90,7 +90,7 @@ const reactivity = ref([
                 complex layouts that adapt to different screen sizes and device orientations.
             </p>
         </div>
-        <div class="section border-bottom border-3 mb-5 pb-5">
+        <div class="border-bottom border-3 mb-5 pb-5">
             <p class="date"><span class="text-danger pe-3">VUE</span> February ,15 ,2023</p>
             <p class="author text-secondary">Written by Emre Kaygusuz</p>
             <h1 class="title2 display-1">Selection Sort</h1>

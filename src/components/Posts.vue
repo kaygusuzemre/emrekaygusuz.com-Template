@@ -27,10 +27,10 @@ function toTop() {
 
         <!-- Page View -->
         <div class="d-flex justify-content-between py-5 px-5" id="navbar-example2">
-            <div class="container d-flex justify-content-between">
+            <div class="d-flex justify-content-between">
 
                 <!-- Social Media Icons -->
-                <div class="icons col-2">
+                <div class="icons col-2 d-flex flex-column align-items-start">
                     <Icons></Icons>
                 </div>
 
@@ -39,22 +39,23 @@ function toTop() {
                     <router-view class="view"></router-view>
                 </div>
 
-                <!-- Navigation Bar -->
-                <div class="menu col-2">
+            <!-- Navigation Bar -->
+                <div class="menu col-2 d-flex flex-column align-items-end">
                     <Menu></Menu>
                 </div>
             </div>
         </div>
         <!-- Arrow to up -->
-        <div class="" @scroll="handleScroll">
-            <a class="arrow text-dark position-fixed" @click="toTop" style="cursor:pointer;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                    class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-                </svg>
-            </a>
+        <div class="arrow text-dark position-fixed" @click="toTop" @scroll="handleScroll" style="cursor:pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-up-circle"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
         </div>
+        <!-- <div class="search position-fixed">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+            </div> -->
     </div>
 </template>
 
@@ -83,19 +84,22 @@ h2 {
     text-shadow: 1px 1px 2px black;
 }
 
-.router.router-link-active,
+/* .router.router-link-active,
 .router.router-link-exact-active {
     color: darkgoldenrod;
-}
-
-.router {
-    color: black;
-}
+} */
 
 .arrow {
     left: 90vw;
     bottom: 9vh;
+    /* top: 50%; */
     animation: bounce 3s infinite;
+    cursor: pointer;
+}
+
+.search {
+    right: 85%;
+    bottom: 9%;
 }
 
 @keyframes bounce {
@@ -136,11 +140,6 @@ li {
     border: 30px solid #28282B;
 }
 
-.router:hover {
-    color: darkgoldenrod;
-    opacity: 50%;
-}
-
 /* Animation */
 .view {
     position: relative;
@@ -161,7 +160,6 @@ li {
 .back-btn {
     left: 50%;
     position: absolute;
-    color: red;
     top: 0%;
     /* background-color: #28282B; */
     padding: 3px;

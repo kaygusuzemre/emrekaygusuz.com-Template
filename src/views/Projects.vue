@@ -77,7 +77,7 @@ const items = ref([
 </script>
 
 <template>
-    <div class="mx-4">
+    <div class="px-4">
         <!-- Title -->
         <div class="text-center pb-3">
             <h1 class="display-4" @click="counter">Projects</h1>
@@ -115,16 +115,16 @@ const items = ref([
                             </div>
                         </div>
                         <!-- <div class="card-body-2 bg-dark mx-4 d-flex align-items-center position-absolute"
-                                                                                        style="cursor:pointer;">
-                                                                                        <div class="p-4 card-body">
-                                                                                            <p class="text-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-                                                                                                facilis fugiat
-                                                                                                magnam
-                                                                                                quis animi, ab eos modi vitae! Fugiat modi temporibus magni voluptatibus quos
-                                                                                                necessitatibus
-                                                                                                numquam. Placeat in pariatur at!</p>
-                                                                                        </div>
-                                                                                    </div> -->
+                                                                                                        style="cursor:pointer;">
+                                                                                                        <div class="p-4 card-body">
+                                                                                                            <p class="text-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                                                                                                                facilis fugiat
+                                                                                                                magnam
+                                                                                                                quis animi, ab eos modi vitae! Fugiat modi temporibus magni voluptatibus quos
+                                                                                                                necessitatibus
+                                                                                                                numquam. Placeat in pariatur at!</p>
+                                                                                                        </div>
+                                                                                                    </div> -->
                     </div>
                 </router-link>
             </div>
