@@ -43,5 +43,50 @@
         <p class="fs-5 pt-5"> Thank you for visiting my website, and I look forward to the opportunity to work with
             you!</p>
     </div>
+
+    <!-- Submit form -->
+
+    <!-- <template>
+      <div>
+        <h1>Contact Us</h1>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" v-model="name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" v-model="email">
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" v-model="message"></textarea>
+          </div>
+          <button type="submit" @click.prevent="submitForm">Submit</button>
+        </form>
+      </div>
+    </template>
+
+    <script>
+    export default {
+      data() {
+        return {
+          name: '',
+          email: '',
+          message: ''
+        }
+      },
+      methods: {
+        submitForm() {
+          // send the form data to the server or perform other actions
+          console.log('Form submitted:', this.name, this.email, this.message)
+          // clear the form after submission
+          this.name = ''
+          this.email = ''
+          this.message = ''
+        }
+      }
+    }
+    </script> -->
 </template>
 
